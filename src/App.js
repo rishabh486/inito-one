@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import ResponsiveAppBar from './components/Header';
+import HeaderLayout from './components/Headerlayout';
 
 function App() {
   return (
     <div className="App">
-    <Header/>
+    <ResponsiveAppBar/>
+    <HeaderLayout/>
     </div>
   );
 }
