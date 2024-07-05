@@ -25,8 +25,8 @@ export default function AccordionExpandDefault() {
       <Accordion  square="false" sx={{ width: '60%',backgroundColor:'#F7F7FE',borderRadius:'24px',overflow:'hidden' }}>
         <AccordionSummary
         //   expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel2-content"
+          id="panel2-header"
         >
           <Typography>Will Inito work if I have PCOS?</Typography>
         </AccordionSummary>
@@ -39,8 +39,8 @@ export default function AccordionExpandDefault() {
       <Accordion  square="false" sx={{ width: '60%',backgroundColor:'#F7F7FE',borderRadius:'24px',overflow:'hidden' }}>
         <AccordionSummary
         //   expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel3-content"
+          id="panel3-header"
         >
           <Typography>How many test strips are required per cycle?</Typography>
         </AccordionSummary>
