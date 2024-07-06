@@ -8,7 +8,7 @@ import initoSmall from '../assets/svg/Logo Inito Small.svg'
 const Footer = () => {
     return (
         <>
-<Box sx={{backgroundColor:'#112D35',display:'flex',justifyContent:'center', alignItems: 'center',padding:'25px'}}>
+<Box sx={{backgroundColor:'#112D35',display:'flex',justifyContent:'center', alignItems: 'center',padding:'25px',width:'100%'}}>
 <Box sx={{display:'flex',flexDirection:'column',marginRight: '130px'}}>
 <div style={{padding:'10px'}}>
 <Typography fontSize="15px" fontWeight="600" color="#FFFFFF">
@@ -102,12 +102,12 @@ const Footer = () => {
 </div>
 </Box>
 </Box>
-<Box sx={{ backgroundColor:'#000000'}}>
-<div style={{display:'flex',justifyContent:'space-around',marginLeft:'160px'}}>
-<div>
+<Box sx={{ backgroundColor:'#000000',width:'100%'}}>
+<div style={{display:'flex',justifyContent:'space-between',marginLeft:'160px'}}>
+<div style={{padding:'3px',marginRight:'40px'}}>
 <img src={initoSmall} alt="inito"/>
 </div>
-<div>
+<div style={{padding:'10px',marginRight:'40px'}}>
                <Typography fontSize="12px" fontWeight="500" color="#869194">
                Copyright 2023, Inito Inc.
                </Typography>

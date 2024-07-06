@@ -13,23 +13,20 @@ const Rectangle = () => {
        
               <div style={{
                 backgroundImage: `url(${rectangle})`,
-                height: '100vh',
-                width: '100%',
                display: 'flex',
                backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden',
               alignItems:'center',
                justifyContent: 'center',
-               padding:'4px'
+               padding:'40px'
                
             }}
             >
-<Box sx={{display:'grid',gridTemplateColumns: 'repeat(2, 1fr)', 
-                gap: 2, 
-                padding: 2}}>
+<Box sx={{display:'flex',flexDirection:'column',gap:'50px'}}>
             {/* First Overlay Component */}
-            <Box  sx={{width:'91%',height:'99%',display:'flex',justifyContent:'center',backgroundColor: '#B4E4F2',borderRadius:'20px'}} >
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+            <Box  sx={{display:'flex',justifyContent:'center',backgroundColor: '#B4E4F2',borderRadius:'20px'}} >
             <Box sx={{}}>
             <img src={maskGroup} alt="maskGroup"/>
             </Box>
@@ -39,7 +36,7 @@ const Rectangle = () => {
             <Box
                
             >
-               <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',width:'78%'}}>
+               <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center'}}>
                <Box sx={{padding:'4px'}}>
                <Typography fontSize="36px" fontWeight="700" color="#112D35">
                Predict and confirm
@@ -86,12 +83,13 @@ const Rectangle = () => {
                 </Box>
                </Box>
             </Box>
-
+</div>
             {/* Third Overlay Component */}
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:'20px'}}>
             <Box
-               
+               sx={{width:'50%'}}
                >
-                  <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',width:'74%'}}>
+                  <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',}}>
                   <Box sx={{padding:'4px'}}>
                   <Typography fontSize="36px" fontWeight="700" color="#112D35">
                   Never miss a day
@@ -144,10 +142,11 @@ const Rectangle = () => {
 
             {/* Fourth Overlay Component */}
             <Box
-               
+               sx={{width:'50%'}}
             >
-             <img src={chartData} alt="chartData"/>
+             <img style={{width:'95%'}}src={chartData} alt="chartData"/>
             </Box>
+            </div>
 </Box>
 </div>
         </>

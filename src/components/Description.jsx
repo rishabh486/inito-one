@@ -4,7 +4,7 @@ import React from "react";
 export const Description = () => {
     return (
         <>
-<Box sx={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems:'center', width:'100%'}}>
+<Box sx={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems:'center', width:'100%',padding:'40px'}}>
 <Box sx={{width:'70%'}}>
     <Box sx={{padding:'20px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         <Typography fontSize="36px" fontWeight="700" color="#112D35">

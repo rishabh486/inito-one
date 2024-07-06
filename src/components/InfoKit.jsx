@@ -8,14 +8,25 @@ import GifComponent from "./GifComponent";
 const InfoKit = () => {
     return (
         <>
-            <Box sx={{display:'flex', justifyContent:'center'}}>
+            <Box sx={{display:'flex', justifyContent:'center',alignItems:'center',gap:'20px',padding:'30px',width:'65%'}}>
                <Box sx={{display:'flex', flexDirection:'column'}}>
+               <div style={{padding: '10px'}}>
                <Typography fontSize="36px" fontWeight="700" color="#112D35">
-               A fertility lab at your fingertips
+               A fertility lab at
+               </Typography>
+               <Typography fontSize="36px" fontWeight="700" color="#112D35">
+               your fingertips
+               </Typography>
+               </div>
+               <div style={{padding: '10px'}}>
+               <Typography fontSize="15px" fontWeight="500" color="#112D35">
+               Easy-to-read fertility diagnostic results directly on your 
                </Typography>
                <Typography fontSize="15px" fontWeight="500" color="#112D35">
-               Easy-to-read fertility diagnostic results directly on your iPhone¹, in just 10 minutes.
+               iPhone¹, in just 10 minutes.
                </Typography>
+               </div>
+               <div style={{padding: '10px'}}>
                <Button sx={{
                     width: '248px',
                     height: '50px',
@@ -26,20 +37,24 @@ const InfoKit = () => {
                 }}>
                     Get the Inito Kit
                 </Button>
+                </div>
                 <Typography fontSize="12px" fontWeight="500" color="#A0ABAE">
-                * The Inito Fertility Monitor currently supports iPhone 7 and up. Android phones are not supported at the moment.
+                * The Inito Fertility Monitor currently supports iPhone 7 and up. Android
+               </Typography>
+               <Typography fontSize="12px" fontWeight="500" color="#A0ABAE">
+                phones are not supported at the moment.
                </Typography>
                </Box> 
-               <Box sx={{display:'grid',gridTemplateColumns: 'repeat(2, 1fr)', 
-                gap: 2, 
-                padding: 2 }}>
+               <Box sx={{display:'flex',flexDirection:'column',gap:'3px',flexWrap:'wrap' }}>
+               <Box sx={{display:'flex' }}>
             <GifComponent src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
-            <GifComponent src={gif2} text={2} description="Dip the test strip in urine for 15 seconds."/>
-           
-            
-            <GifComponent src={gif3} text={3} description="Dip the test strip in urine for 15 seconds."/>
-            <GifComponent src={gif4} text={4} description="Dip the test strip in urine for 15 seconds."/>
+            <GifComponent src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>
+           </Box>
+            <Box sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <GifComponent src={gif3} text={3} description="Insert the test strip into the Inito Fertility Monitor."/>
+            <GifComponent src={gif4} text={4} description="Get personalized results on our App in 10 minutes."/>
             </Box>
+                                </Box>
                                 </Box>
                             </>
     )

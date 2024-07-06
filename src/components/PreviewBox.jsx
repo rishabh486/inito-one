@@ -16,15 +16,17 @@ const PreviewBox = () => {
                 backgroundImage: `url(${previewRectangle})`,
                 height: '2140px',
                 width: '100vw',
-               marginTop: '155px',
+               marginTop: '250px',
                display: 'flex',
                flexDirection: 'column',
                justifyContent: 'center',
-               alignItems: 'center',gap:'40px'
+               alignItems: 'center',gap:'100px',
+               position:'relative'
             }}
         >
                 {/* First Overlay Component */}
-                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,position:'relative'}}>
+                <Box sx={{position:'absolute',bottom:'90%'}}>
+                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,position:'relative',padding:'20px'}}>
                 <img  style={{position:'absolute',left:"90%",bottom:'75%'}}src={round} alt="round"/>
                    <Box sx={{width:'93%' ,backgroundColor: '#ffffff', borderRadius: '20px',padding:'30px',}}>
                    <div style={{padding: '4px'}}>
@@ -76,9 +78,10 @@ const PreviewBox = () => {
 </div>
                    </Box>
                 </Box>
+                </Box>
 
                 {/* Second Overlay Component */}
-                <Box  sx={{ display: 'flex', flexDirection:'column',justifyContent: 'center', alignItems: 'center', width:'33%' }}>
+                <Box  sx={{ display: 'flex', flexDirection:'column',justifyContent: 'center', alignItems: 'center',padding:'20px' }}>
                
                 <Typography fontSize="36px" fontWeight="700" color="#112D35">
                 Why Inito is the smarter

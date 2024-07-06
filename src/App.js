@@ -10,10 +10,12 @@ import PreviewBox from './components/PreviewBox';
 import InfoKit from './components/InfoKit';
 import AccordionExpandDefault from './components/Accordion';
 import Footer from './components/Footer';
+import ReviewBox from './components/ReviewBox';
+import TextComponent from './components/TextComponent';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{display:'flex', flexDirection:'column',overflow:'hidden',justifyContent:'center',alignItems:'center'}}>
     <ResponsiveAppBar/>
     <HeaderLayout/>
     <SeenComponent/>
@@ -21,6 +23,8 @@ function App() {
     <Rectangle/>
     <PreviewBox/>
     <InfoKit/>
+    <ReviewBox/>
+    <TextComponent/>
     <AccordionExpandDefault/>
     <Footer/>
     </div>

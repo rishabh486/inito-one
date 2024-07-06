@@ -8,24 +8,24 @@ import entrepreneur from '../assets/svg/image 13.svg'
 export const SeenComponent = () =>{
     return (
         <>
-          <Box sx={{display: 'flex',justifyContent: 'center',alignItems:'center', flexDirection:'column'}}>
-            <Typography>
+          <Box sx={{display: 'flex',justifyContent: 'center',alignItems:'center', flexDirection:'column',width:'100%',gap:'30px'}}>
+            <Typography fontSize="17px" fontWeight="700" color="#C4C4C4">
                 AS SEEN ON 
             </Typography>
-            <Box sx={{display:'flex',justifyContent: 'space-around'}}>
-            <Box>
+            <Box sx={{display:'flex',gap:'70px',justifyContent:'cenetr',alignItems:'center'}}>
+            <Box sx={{display:'flex'}}>
                 <img src={bloomberg} alt="bloomberg"/>
                 </Box>
-                <Box>
+                <Box sx={{display:'flex'}}>
                 <img src={forbes} alt="bloomberg"/>
                 </Box>
-                <Box>
+                <Box sx={{display:'flex'}}>
                 <img src={thisWeek} alt="bloomberg"/>
                 </Box>
-                <Box>
+                <Box sx={{display:'flex'}}>
                 <img src={washington} alt="bloomberg"/>
                 </Box>
-                <Box>
+                <Box sx={{display:'flex'}}>
                 <img src={entrepreneur} alt="bloomberg"/>
                 </Box>
             </Box>
