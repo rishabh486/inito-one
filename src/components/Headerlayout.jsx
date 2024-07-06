@@ -86,24 +86,25 @@ sx={{
                 overflow: 'hidden',
             }}
 >
- <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'59%',left:'28%'}}>
- 
+ <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'50%',left:'28%'}}>
           <img src={mobileSm} alt="mobileSm" />
          
                 
           </Box>
-          <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'61%',left:'-5%'}}>
+          <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'50%',left:'-5%'}}>
  
  <img src={initoDevice} alt="initoDevice" />
 
        
  </Box>
   <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',width:'100%',padding:'20px'}}>
-  <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'18px'}}>
   <img src={star} alt="star"/>
+  <div style={{marginTop:'3px'}}>
   <Typography  fontWeight="700" fontSize="8px" color="#000000">
           TRUSTED BY 20,000+ COUPLES
                 </Typography>
+                </div>
                 </div>
             <Box sx={{padding:'5px'}}>
             <Typography  fontWeight="700" fontSize="25px" color="#112D35">
@@ -116,7 +117,7 @@ sx={{
              in 10 minutes
                 </Typography>
             </Box>
-          <Box sx={{}}>
+          <Box sx={{display:'flex',flexDirection:'column',marginRight:'23px'}}>
             <Typography  fontWeight="500" fontSize="12px" >
                 Get accurate results of 
             <span style={{color:"#112D35",fontWeight:"700"}}> Estrogen, LH,</span>
@@ -135,7 +136,7 @@ sx={{
          
            
             </div>
-            <div style={{padding:'5px',position:'absolute',top:'80%',zIndex:'1000000000'}}>
+            <div style={{padding:'5px',position:'absolute',top:'92%',zIndex:'1000000000',left:'35%'}}>
                 <Button sx={{
                     color:'#fff',
                     backgroundColor: '#1F94AA',

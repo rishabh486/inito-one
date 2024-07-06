@@ -153,7 +153,7 @@ const Rectangle = ({width}) => {
 <>
 <div style={{
                 backgroundImage: `url(${predictContainer})`,
-                height: '100vh',
+                height: '75vh',
                 width: '100vw',
                display: 'flex',
                flexDirection: 'column',
@@ -183,7 +183,7 @@ const Rectangle = ({width}) => {
                   </Box>
                   <Box sx={{padding:'4px'}}>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
-                  Unlike most ovulation tests that
+                   Unlike most ovulation tests that
                   </Typography>
                   <Box sx={{padding:'4px'}}>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
@@ -230,7 +230,7 @@ const Rectangle = ({width}) => {
             </div>
            
             <Box
-               sx={{width:'50%'}}
+               sx={{width:'50%',padding:'30px'}}
                >
                   <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',}}>
                   <Box sx={{padding:'4px'}}>

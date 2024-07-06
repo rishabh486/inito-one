@@ -46,7 +46,7 @@ export const SeenComponent = ({width}) =>{
             <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'10px'}}>
            
                 <Box sx={{display:'flex',justifyContent:'space-between',gap:'30px'}}>
-                <img src={forbes} alt="bloomberg"/>
+                <img  src={forbes} alt="bloomberg"/>
                 <img src={thisWeek} alt="bloomberg"/>
                 </Box>
                 <Box sx={{display:'flex',gap:'30px',justifyContent:'space-between'}}>

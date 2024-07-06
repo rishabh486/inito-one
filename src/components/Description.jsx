@@ -1,6 +1,9 @@
 import { Typography ,Box} from "@mui/material";
 import React from "react";
 import smDescription from '../assets/svg/sm-description.svg';
+import trust from '../assets/svg/trust.svg';
+import tick from '../assets/svg/tick.svg';
+import eligible from '../assets/svg/eligible.svg'
 export const Description = ({width}) => {
     return (
         <>
@@ -57,10 +60,10 @@ Inito is the only fertility monitor that measures all <span style={{color:"#112D
 </Box>
 :<>
 
-<Box sx={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems:'center', width:'100%',padding:'40px',
+<Box sx={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems:'center', width:'100%',padding:'30px',
 backgroundImage: `url(${smDescription})`
 }}>
-<Box sx={{width:'70%'}}>
+<Box sx={{}}>
     <Box sx={{padding:'10px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         <Typography fontSize="36px" fontWeight="700" color="#112D35">
         The only fertility kit 
@@ -69,7 +72,7 @@ backgroundImage: `url(${smDescription})`
         you will ever need
         </Typography>
     </Box>
-    <Box sx={{marginLeft:'30px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+    <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
     <div>
         <Typography fontSize="13px" fontWeight="" color="#112D35">
         Most ovulation tests predict your
@@ -127,6 +130,30 @@ picture of your cycles with results
 <Typography fontSize="13px">unique to your body.</Typography>
 
     </Box>
+</Box>
+
+<Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',padding:'15px',gap:'5px'}}>
+    <img src={trust} alt="trust"/>
+    <Typography fontSize="9px" fontWeight="600" color="#112D35">
+    TRUSTED BY
+        </Typography>
+        <Typography fontSize="9px" fontWeight="600" color="#112D35">
+        20,000+ COUPLES
+        </Typography>
+</Box>
+<Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',padding:'15px',gap:'5px'}}>
+    <img src={tick} alt="trust"/>
+    <Typography fontSize="9px" fontWeight="600" color="#112D35">
+    FREE US SHIPPING
+        </Typography>
+      
+</Box>
+<Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',padding:'15px',gap:'5px'}}>
+    <img src={eligible} alt="trust"/>
+    <Typography fontSize="9px" fontWeight="600" color="#112D35">
+    HSA/FSA ELIGIBLE
+        </Typography>
+       
 </Box>
 </Box>
 </>}

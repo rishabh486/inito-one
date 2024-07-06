@@ -8,6 +8,7 @@ import round from '../assets/svg/round.svg';
 import chart from '../assets/svg/chart.svg';
 import doctor from '../assets/svg/doctor.svg';
 import greenHeart from '../assets/svg/green-heart.svg';
+import measureSm from '../assets/svg/measure-sm.svg'
 const PreviewBox = ({width}) => {
     return (
         <>
@@ -246,6 +247,19 @@ to the unique you.
             : <>
             <Box>
             <Box sx={{}}>
+            <Box
+                sx={{
+                backgroundImage: `url(${measureSm})`,
+                height: '100vh',
+                width: '100vw',
+               marginTop: '250px',
+               display: 'flex',
+               flexDirection: 'column',
+               justifyContent: 'center',
+               alignItems: 'center',gap:'100px',
+               position:'relative'
+         
+            }}>
                 <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px'}}>
                    <Box sx={{ backgroundColor: '#ffffff', borderRadius: '20px',padding:'30px',}}>
                    <div style={{padding: '4px'}}>
@@ -322,7 +336,7 @@ to the unique you.
                 </Box> 
             </Box>
 
-            <Box sx={{display:'flex', flexDirection:'column'}}>
+            <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                    <div style={{padding:'4px'}}>
                    <Typography fontSize="20px" fontWeight="700" color="#112D35">
                    Adapts to your
@@ -363,11 +377,12 @@ influence hormone levels. Inito measures
                </Typography>
                </div>
                    </Box>
-                   <Box >
-                    <img style={{overflow: 'hidden',}} src={ladyInito} alt=""/>
+                  
+                   <Box sx={{width:'100%'}}>
+                    <img style={{overflow: 'hidden',width:'100%'}} src={ladyInito} alt=""/>
                     
                    </Box>
-
+                   </Box>
                    <Box sx={{display:'flex',flexDirection:'column',}}>
                    <div style={{padding:'5px'}}>
                    <Typography fontSize="18px" fontWeight="700" color="#112D35">
@@ -466,8 +481,8 @@ influence hormone levels. Inito measures
                </Typography>
                </Box>
                    </Box>
-                   <Box>
-                    <img style={{overflow: 'hidden',}} src={chart} alt="chart"/>
+                   <Box sx={{width:'100%'}}>
+                    <img style={{overflow: 'hidden',width:'100%'}} src={chart} alt="chart"/>
                    </Box>
 
             </>
