@@ -12,17 +12,39 @@ import AccordionExpandDefault from './components/Accordion';
 import Footer from './components/Footer';
 import ReviewBox from './components/ReviewBox';
 import TextComponent from './components/TextComponent';
+import { useState, useEffect } from 'react';
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 function App() {
+  const { width, height } = useWindowDimensions();
   return (
     <div className="App" style={{display:'flex', flexDirection:'column',overflow:'hidden',justifyContent:'center',alignItems:'center'}}>
-    <ResponsiveAppBar/>
-    <HeaderLayout/>
+    <ResponsiveAppBar width={width}/>
+    <HeaderLayout width={width}/>
     <SeenComponent/>
-    <Description/>
-    <Rectangle/>
-    <PreviewBox/>
-    <InfoKit/>
+    <Description width={width}/>
+    <Rectangle width={width}/>
+    <PreviewBox width={width}/>
+    <InfoKit width={width}/>
     <ReviewBox/>
     <TextComponent/>
     <AccordionExpandDefault/>

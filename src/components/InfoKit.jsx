@@ -5,9 +5,11 @@ import gif2 from "../assets/svg/ezgif 2.svg";
 import gif3 from '../assets/svg/ezgif 2 (1).svg';
 import gif4 from '../assets/svg/ezgif 2 (2).svg'
 import GifComponent from "./GifComponent";
-const InfoKit = () => {
+import GifSm from "./GifSm";
+const InfoKit = ({width}) => {
     return (
         <>
+        {width > 600 ?
             <Box sx={{display:'flex', justifyContent:'center',alignItems:'center',gap:'20px',padding:'30px',width:'65%'}}>
                <Box sx={{display:'flex', flexDirection:'column'}}>
                <div style={{padding: '10px'}}>
@@ -56,6 +58,46 @@ const InfoKit = () => {
             </Box>
                                 </Box>
                                 </Box>
+
+                                :<>
+
+                             <Box>
+                             <Box sx={{display:'flex', flexDirection:'column'}}>
+               <div style={{padding: '5px'}}>
+               <Typography fontSize="20px" fontWeight="700" color="#112D35">
+               A fertility lab at
+               </Typography>
+               <Typography fontSize="20px" fontWeight="700" color="#112D35">
+               your fingertips
+               </Typography>
+               </div>
+               <div style={{padding: '5px'}}>
+               <Typography fontSize="11px" fontWeight="500" color="#112D35">
+               Easy-to-read fertility diagnostic 
+               </Typography>
+               <Typography fontSize="11px" fontWeight="500" color="#112D35">
+               results directly on your iPhone¹,
+               </Typography>
+               <Typography fontSize="11px" fontWeight="500" color="#112D35">
+               in just 10 minutes.
+               </Typography>
+               </div>
+                             </Box> 
+                             </Box>
+
+                             <Box sx={{display:'flex',flexDirection:'column',gap:'3px',flexWrap:'wrap' }}>
+              
+            <GifSm src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
+            <GifSm src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>
+          
+            
+            <GifSm src={gif3} text={3} description="Insert the test strip into the Inito Fertility Monitor."/>
+            <GifSm src={gif4} text={4} description="Get personalized results on our App in 10 minutes."/>
+            
+                                </Box>
+
+                                </>}
+
                             </>
     )
 }

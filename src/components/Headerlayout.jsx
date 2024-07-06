@@ -4,9 +4,11 @@ import backgroundImage from '../assets/svg/main-background.svg'
 import iphoneImage from '../assets/svg/iPhone 13 Pro Mockup Vol 03 Floating iphone with inito 2.svg'
 import zigzag from '../assets/svg/zigzag.svg';
 import zigzag1 from '../assets/svg/zigzag1.svg';
-export const HeaderLayout = () => {
+import smLayout from '../assets/svg/sm-layout.svg'
+export const HeaderLayout = ({width}) => {
     return (
         <>
+        {width >600 ?
         <Box  
         sx={{backgroundImage: `url(${backgroundImage})`,
                 height: '100vh',
@@ -64,7 +66,29 @@ export const HeaderLayout = () => {
                <img style={{position:'absolute',top:'28%',left:'70%'}} src={zigzag} alt="zigzag"/>
                <img style={{position:'absolute',top:'12%',left:'23%'}}src={zigzag1} alt="zigzag"/>
             </Box>
-</Box>    
+</Box>  
+:
+<>
+
+<Box
+sx={{
+                backgroundImage: `url(${smLayout})`,
+                height: '100vh',
+                width: '100vw',
+               display: 'flex',
+               flexDirection: 'column',
+               justifyContent: 'center',
+               alignItems: 'center',
+               position:'relative',
+               backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                overflow: 'hidden',
+            }}
+>
+
+</Box>
+
+</>}  
         </>
     )
 }
