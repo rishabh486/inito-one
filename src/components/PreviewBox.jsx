@@ -250,7 +250,7 @@ to the unique you.
             <Box
                 sx={{
                 backgroundImage: `url(${measureSm})`,
-                height: '100vh',
+                height: '75vh',
                 width: '100vw',
                marginTop: '250px',
                display: 'flex',
@@ -260,7 +260,7 @@ to the unique you.
                position:'relative'
          
             }}>
-                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px'}}>
+                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px',position:'absolute',top:'-30%'}}>
                    <Box sx={{ backgroundColor: '#ffffff', borderRadius: '20px',padding:'30px',}}>
                    <div style={{padding: '4px'}}>
                    <Typography fontSize="9px" fontWeight="500" color="#1F94AA">
