@@ -40,15 +40,15 @@ function App() {
     <div className="App" style={{display:'flex', flexDirection:'column',overflow:'hidden',justifyContent:'center',alignItems:'center'}}>
     <ResponsiveAppBar width={width}/>
     <HeaderLayout width={width}/>
-    <SeenComponent/>
+    <SeenComponent width={width}/>
     <Description width={width}/>
     <Rectangle width={width}/>
     <PreviewBox width={width}/>
     <InfoKit width={width}/>
-    <ReviewBox/>
-    <TextComponent/>
-    <AccordionExpandDefault/>
-    <Footer/>
+    <ReviewBox width={width}/>
+    <TextComponent width={width}/>
+    <AccordionExpandDefault width={width}/>
+    <Footer width={width}/>
     </div>
   );
 }

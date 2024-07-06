@@ -60,7 +60,7 @@ const InfoKit = ({width}) => {
                                 </Box>
 
                                 :<>
-
+<Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                              <Box>
                              <Box sx={{display:'flex', flexDirection:'column'}}>
                <div style={{padding: '5px'}}>
@@ -85,7 +85,7 @@ const InfoKit = ({width}) => {
                              </Box> 
                              </Box>
 
-                             <Box sx={{display:'flex',flexDirection:'column',gap:'3px',flexWrap:'wrap' }}>
+                             <Box sx={{display:'flex',flexDirection:'column',gap:'3px',flexWrap:'wrap',justifyContent:'center',alignItems:'center' }}>
               
             <GifSm src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
             <GifSm src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>
@@ -95,7 +95,7 @@ const InfoKit = ({width}) => {
             <GifSm src={gif4} text={4} description="Get personalized results on our App in 10 minutes."/>
             
                                 </Box>
-
+</Box>
                                 </>}
 
                             </>

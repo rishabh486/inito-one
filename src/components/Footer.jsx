@@ -5,8 +5,11 @@ import insta from '../assets/svg/Instagram - Negative.svg'
 import lk from '../assets/svg/LinkedIn - Negative.svg'
 import yt from '../assets/svg/YouTube - Negative.svg'
 import initoSmall from '../assets/svg/Logo Inito Small.svg'
-const Footer = () => {
+import arrow from "../assets/svg/arrow.svg"
+const Footer = ({width}) => {
     return (
+        <>
+        {width > 600 ?
         <>
 <Box sx={{backgroundColor:'#112D35',display:'flex',justifyContent:'center', alignItems: 'center',padding:'25px',width:'100%'}}>
 <Box sx={{display:'flex',flexDirection:'column',marginRight: '130px'}}>
@@ -115,6 +118,64 @@ const Footer = () => {
 </div>
 </div>
 </Box>
+</>
+:
+<>
+
+<Box sx={{backgroundColor:'#112D35',display:'flex',flexDirection:'column', justifyContent:'center', alignItems: 'center',padding:'25px',width:'100%',gap:'30px'}}>
+<Box sx={{display:'flex',justifyContent:'space-between',width:'50%'}}>
+<div style={{padding: '10px'}}>
+<img src={fb} alt="fb"/>
+</div>
+<div style={{padding: '10px'}}>
+<img src={insta} alt="insta"/>
+</div>
+<div style={{padding: '10px'}}>
+<img src={lk} alt="lk"/>
+</div>
+<div style={{padding: '10px'}}>
+<img src={yt} alt="yt"/>
+</div>
+</Box>
+
+<Box sx={{display:'flex',justifyContent:'space-between',flexDirection:'column',gap:'50px',width:'60%'}}>
+<Box sx={{display:'flex',justifyContent:'space-between'}}>
+    <Typography fontSize="15px" fontWeight="500" color="#fff">
+   Company
+    </Typography>
+    <img src={arrow} alt="arrow"/>
+    </Box>
+    <Box sx={{display:'flex',justifyContent:'space-between'}}>
+    <Typography fontSize="15px" fontWeight="500" color="#fff">
+   Support
+    </Typography>
+    <img src={arrow} alt="arrow"/>
+    </Box>
+    <Box sx={{display:'flex',justifyContent:'space-between'}}>
+    <Typography fontSize="15px" fontWeight="500" color="#fff">
+   Get in Touch
+    </Typography>
+    <img src={arrow} alt="arrow"/>
+    </Box>
+</Box>
+</Box>
+<Box sx={{ backgroundColor:'#000000',width:'100%',padding:'40px'}}>
+<div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+<div style={{padding:'3px'}}>
+<img src={initoSmall} alt="inito"/>
+</div>
+<div style={{padding:'10px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+               <Typography fontSize="11px" fontWeight="500" color="#fff">
+               Copyright 2019. Samplytics Technologies Private
+               </Typography>
+               <Typography fontSize="11px" fontWeight="500" color="#fff">
+                Limited. All Rights Reserved.
+               </Typography>
+               
+</div>
+</div>
+</Box>
+</>}
         </>
     )
 }

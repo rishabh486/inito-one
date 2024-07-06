@@ -4,7 +4,10 @@ import backgroundImage from '../assets/svg/main-background.svg'
 import iphoneImage from '../assets/svg/iPhone 13 Pro Mockup Vol 03 Floating iphone with inito 2.svg'
 import zigzag from '../assets/svg/zigzag.svg';
 import zigzag1 from '../assets/svg/zigzag1.svg';
-import smLayout from '../assets/svg/sm-layout.svg'
+import smLayout from '../assets/svg/layout-sm.svg'
+import mobileSm from '../assets/svg/1 mobile 1.svg';
+import star from '../assets/svg/star.svg'
+import initoDevice from '../assets/svg/inito-device 1.svg'
 export const HeaderLayout = ({width}) => {
     return (
         <>
@@ -21,6 +24,7 @@ export const HeaderLayout = ({width}) => {
                >
 
             <div style={{display:'flex',flexDirection:'column',padding:'50px'}}>
+            <img src={star} alt="star"/>
             <Box sx={{padding:'5px'}}>
             <Typography variant="h3" fontWeight="700" fontSize="48px" color="#112D35">
             Track your fertility 
@@ -73,19 +77,76 @@ export const HeaderLayout = ({width}) => {
 <Box
 sx={{
                 backgroundImage: `url(${smLayout})`,
-                height: '100vh',
+                height: '70vh',
                 width: '100vw',
-               display: 'flex',
-               flexDirection: 'column',
-               justifyContent: 'center',
-               alignItems: 'center',
+                
                position:'relative',
                backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden',
             }}
 >
+ <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'59%',left:'28%'}}>
+ 
+          <img src={mobileSm} alt="mobileSm" />
+         
+                
+          </Box>
+          <Box sx={{display:'flex',justifyContent:'flex-end',position:'absolute',top:'61%',left:'-5%'}}>
+ 
+ <img src={initoDevice} alt="initoDevice" />
 
+       
+ </Box>
+  <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',width:'100%',padding:'20px'}}>
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+  <img src={star} alt="star"/>
+  <Typography  fontWeight="700" fontSize="8px" color="#000000">
+          TRUSTED BY 20,000+ COUPLES
+                </Typography>
+                </div>
+            <Box sx={{padding:'5px'}}>
+            <Typography  fontWeight="700" fontSize="25px" color="#112D35">
+            Track your fertility 
+                </Typography>
+                <Typography  fontWeight="700" fontSize="25px" color="#112D35">
+             hormones at home, 
+                </Typography>
+                <Typography  fontWeight="700" fontSize="25px" color="#112D35">
+             in 10 minutes
+                </Typography>
+            </Box>
+          <Box sx={{}}>
+            <Typography  fontWeight="500" fontSize="12px" >
+                Get accurate results of 
+            <span style={{color:"#112D35",fontWeight:"700"}}> Estrogen, LH,</span>
+                </Typography>
+                <Typography  fontWeight="500" fontSize="12px" >
+                <span style={{color:"#112D35",fontWeight:"700"}}>Progesterone</span><span style={{color:"#112D35",fontWeight:"700"}}>(PdG) and FSH </span>with
+                </Typography>
+                <Typography  fontWeight="500" fontSize="12px" color="#112D35">
+                Inito, the all-in-one, FDA-registered
+                </Typography>
+                <Typography  fontWeight="500" fontSize="12px" color="#112D35">
+                fertility monitor.
+                </Typography>
+          </Box>
+         
+         
+           
+            </div>
+            <div style={{padding:'5px',position:'absolute',top:'80%',zIndex:'1000000000'}}>
+                <Button sx={{
+                    color:'#fff',
+                    backgroundColor: '#1F94AA',
+                    borderRadius: '50px',
+                    textTransform: 'none',
+                    fontSize: '15px',
+                margin:'5px'
+                }}>
+                    How does inito work?
+                </Button>
+            </div>
 </Box>
 
 </>}  
