@@ -153,7 +153,7 @@ const Rectangle = ({width}) => {
 <>
 <div style={{
                 backgroundImage: `url(${predictContainer})`,
-                height: '75vh',
+                height: '100vh',
                 width: '100vw',
                display: 'flex',
                flexDirection: 'column',
@@ -162,32 +162,32 @@ const Rectangle = ({width}) => {
                 overflow: 'hidden',
               alignItems:'center',
                justifyContent: 'center',
-               padding:'40px',
-               gap:'5px'
+               gap:'5px',
+               padding:'35px'
                
             }}
             >
               <Box 
                >
-                  <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',padding:'20px'}}>
-                  <Box sx={{padding:'4px'}}>
-                  <Typography fontSize="17px" fontWeight="700" color="#112D35">
+                  <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                  <Box sx={{}}>
+                  <Typography fontSize="20px" fontWeight="700" color="#112D35">
                   Predict and confirm
                   </Typography>
-                  <Typography fontSize="17px" fontWeight="700" color="#112D35">
+                  <Typography fontSize="20px" fontWeight="700" color="#112D35">
                   your ovulation with
                   </Typography>
-                  <Typography fontSize="17px" fontWeight="700" color="#112D35">
+                  <Typography fontSize="20px" fontWeight="700" color="#112D35">
                   actual data
                   </Typography>
                   </Box>
                   <Box sx={{padding:'4px'}}>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
-                   Unlike most ovulation tests that
+                  Unlike most ovulation tests that
                   </Typography>
-                  <Box sx={{padding:'4px'}}>
+                  <Box sx={{}}>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
-                 only give you "yes/no" results,inito
+                  only give you "yes/no" results,inito
                   </Typography>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
                   provides <span style={{color:"#112D35",fontWeight:"700"}}>real numerical values</span> of 
@@ -196,7 +196,7 @@ const Rectangle = ({width}) => {
                   your fertility hormones.
                   </Typography>
                   </Box>
-                  <Box sx={{padding:'4px'}}>
+                  <Box sx={{}}>
                   <Typography fontSize="13px" fontWeight="500" color="#112D35">
                   If you have irregular cycles, actual 
                   </Typography>
@@ -210,13 +210,14 @@ const Rectangle = ({width}) => {
                   best time to try to conceive.
                   </Typography>
                   </Box>
-   <Box sx={{padding:'4px'}}>
+   <Box sx={{padding:'4px',width:'100%'}}>
                   <Button sx={{
-                       
+                       width:'100%',
                        backgroundColor: '#1F94AA',
                        borderRadius: '50px',
                        textTransform: 'none',
-                       fontSize: '17px'
+                       fontSize: '17px',
+                       color:'#fff'
                    }}>
                        Get the Inito Kit
                    </Button>
@@ -225,7 +226,7 @@ const Rectangle = ({width}) => {
                </Box>
                </Box>
                <Box sx={{display:'flex'}}>
-               <img src={maskGroup} alt="maskGroup"/>
+               <img style={{}}src={maskGroup} alt="maskGroup"/>
                </Box>
             </div>
            

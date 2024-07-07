@@ -250,7 +250,7 @@ to the unique you.
             <Box
                 sx={{
                 backgroundImage: `url(${measureSm})`,
-                height: '75vh',
+                height: '100vh',
                 width: '100vw',
                marginTop: '250px',
                display: 'flex',
@@ -333,10 +333,7 @@ to the unique you.
 </div>
                    </Box>
                 </Box>
-                </Box> 
-            </Box>
-
-            <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center',marginTop:'150px'}}>
                    <div style={{padding:'4px'}}>
                    <Typography fontSize="20px" fontWeight="700" color="#112D35">
                    Adapts to your
@@ -377,6 +374,11 @@ influence hormone levels. Inito measures
                </Typography>
                </div>
                    </Box>
+                </Box> 
+               
+            </Box>
+
+           
                   
                    <Box sx={{width:'100%'}}>
                     <img style={{overflow: 'hidden',width:'100%'}} src={ladyInito} alt=""/>

@@ -141,7 +141,7 @@ export default function AccordionExpandDefault({width}) {
 
     :
     <>
-    <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'20px'}}>
+    <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'20px',padding:'20px'}}>
      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'15px'}}>
       <Accordion defaultExpanded square="false" sx={{ width: '70% !important',backgroundColor:'#F7F7FE',borderRadius:'24px',overflow:'hidden' }}>
         <AccordionSummary

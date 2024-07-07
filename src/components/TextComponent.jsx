@@ -32,7 +32,7 @@ answered
     Your top questions,
     </Typography>
     </Box>
-    <Box sx={{position:'absolute',left:'47%',}}>
+    <Box sx={{position:'absolute',left:'47%',marginBottom:'25px',marginLeft:'3px'}}>
     <img src={circleSm} alt="smcircle"/>
     </Box>
    <Box>
