@@ -260,7 +260,7 @@ to the unique you.
                position:'relative'
          
             }}>
-                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px',position:'absolute',top:'-13%'}}>
+                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px',position:'absolute',top:'-20%'}}>
                    <Box sx={{ backgroundColor: '#ffffff', borderRadius: '20px',padding:'30px',}}>
                    <div style={{padding: '4px'}}>
                    <Typography fontSize="9px" fontWeight="500" color="#1F94AA">
