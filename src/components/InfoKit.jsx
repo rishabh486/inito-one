@@ -11,8 +11,8 @@ const InfoKit = ({width}) => {
     return (
         <>
         {width > 600 ?
-            <Box sx={{display:'flex', justifyContent:'center',alignItems:'center',gap:'20px',padding:'30px',width:'65%'}}>
-               <Box sx={{display:'flex', flexDirection:'column'}}>
+            <Box sx={{display:'flex', justifyContent:'center',alignItems:'center',padding:'30px'}}>
+               <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center'}}>
                <div style={{padding: '10px',position:'relative'}}>
                <Typography fontSize="36px" fontWeight="700" color="#112D35">
                A <span>fertility lab<span><img style={{position:'absolute',top:'41%',left:'11%'}} src={largeF} alt="large"/></span></span> at
@@ -48,8 +48,8 @@ const InfoKit = ({width}) => {
                 phones are not supported at the moment.
                </Typography>
                </Box> 
-               <Box sx={{display:'flex',flexDirection:'column',gap:'3px',flexWrap:'wrap' }}>
-               <Box sx={{display:'flex' }}>
+               <Box sx={{display:'flex',flexDirection:'column',gap:'3px' }}>
+               <Box sx={{display:'flex',alignItems:'center',justifyContent:'center' }}>
             <GifComponent src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
             <GifComponent src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>
            </Box>
@@ -86,7 +86,7 @@ const InfoKit = ({width}) => {
                              </Box> 
                              </Box>
 
-                             <Box sx={{display:'flex',flexDirection:'column',gap:'20px',flexWrap:'wrap',justifyContent:'center',alignItems:'center' }}>
+                             <Box sx={{display:'flex',flexDirection:'column',gap:'20px',flexWrap:'wrap',justifyContent:'center',alignItems:'center',width:'50%' }}>
               
             <GifSm src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
             <GifSm src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>

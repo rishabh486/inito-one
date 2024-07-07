@@ -9,7 +9,7 @@ const ReviewBox = () => {
     backgroundColor: '#F7F7FE',
    display:' flex', 
   margin:'10px',
-  width:'60%',
+  width:'50%',
     borderRadius: '40px',
     padding:'25px',
     justifyContent:'center',

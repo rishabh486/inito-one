@@ -4,7 +4,7 @@ import gif1 from "../assets/svg/ezgif 1.svg";
 const GifComponent = ({src, text, description}) => {
     return (
         <>
-   <Box sx={{display:'flex',flexDirection:'column',gap:'3px'}}>
+   <Box sx={{display:'flex',flexDirection:'column',gap:'3px',justifyContent:'center'}}>
                <Box sx={{}}>
                     <img src={src} alt="gif1"/>
                     </Box>
