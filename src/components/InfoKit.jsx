@@ -86,7 +86,7 @@ const InfoKit = ({width}) => {
                              </Box> 
                              </Box>
 
-                             <Box sx={{display:'flex',flexDirection:'column',gap:'20px',flexWrap:'wrap',justifyContent:'center',alignItems:'center',width:'50%' }}>
+                             <Box sx={{display:'flex',flexDirection:'column',gap:'20px',flexWrap:'wrap',justifyContent:'center',alignItems:'center' }}>
               
             <GifSm src={gif1} text={1} description="Dip the test strip in urine for 15 seconds."/>
             <GifSm src={gif2} text={2} description="Attach the Inito Fertility Monitor to your iPhone*."/>
