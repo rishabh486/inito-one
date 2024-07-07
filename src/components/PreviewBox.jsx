@@ -250,17 +250,17 @@ to the unique you.
             <Box
                 sx={{
                 backgroundImage: `url(${measureSm})`,
-                height: '100vh',
+                height: '86vh',
                 width: '100vw',
                marginTop: '250px',
                display: 'flex',
                flexDirection: 'column',
                justifyContent: 'center',
-               alignItems: 'center',gap:'100px',
+               alignItems: 'center',
                position:'relative'
          
             }}>
-                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px',position:'absolute',top:'-30%'}}>
+                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,padding:'20px',position:'absolute',top:'-13%'}}>
                    <Box sx={{ backgroundColor: '#ffffff', borderRadius: '20px',padding:'30px',}}>
                    <div style={{padding: '4px'}}>
                    <Typography fontSize="9px" fontWeight="500" color="#1F94AA">
@@ -333,7 +333,7 @@ to the unique you.
 </div>
                    </Box>
                 </Box>
-                <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center',marginTop:'150px'}}>
+                <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center',marginTop:'232px'}}>
                    <div style={{padding:'4px'}}>
                    <Typography fontSize="20px" fontWeight="700" color="#112D35">
                    Adapts to your
