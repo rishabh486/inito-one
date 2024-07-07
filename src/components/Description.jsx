@@ -3,17 +3,20 @@ import React from "react";
 import smDescription from '../assets/svg/sm-description.svg';
 import trust from '../assets/svg/trust.svg';
 import tick from '../assets/svg/tick.svg';
-import eligible from '../assets/svg/eligible.svg'
+import eligible from '../assets/svg/eligible.svg';
+import dash from '../assets/svg/dash.svg';
 export const Description = ({width}) => {
     return (
         <>
         {width>600?
 <Box sx={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems:'center', width:'100%',padding:'40px',
 }}>
-<Box sx={{width:'70%'}}>
+<Box sx={{width:'70%',position:'relative'}}>
+
     <Box sx={{padding:'20px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+    
         <Typography fontSize="36px" fontWeight="700" color="#112D35">
-        The only fertility kit you will
+        The <span><span>only</span><span><img style={{position:'absolute',top:'17%',right:'60%'}}src={dash} alt="dash"/></span></span> fertility kit you will
         </Typography>
         <Typography fontSize="36px" fontWeight="700" color="#112D35">
          ever need

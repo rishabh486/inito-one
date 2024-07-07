@@ -8,7 +8,7 @@ const ReviewBox = () => {
 <Box sx={{
     backgroundColor: '#F7F7FE',
    display:' flex', 
-  
+  margin:'10px',
   width:'60%',
     borderRadius: '40px',
     padding:'25px',
@@ -29,15 +29,16 @@ const ReviewBox = () => {
     <Typography fontSize="15px" fontWeight="500" color="#3F55D">
   so it’s nice to see all the different hormones mapped out together.
     </Typography>
-    </Box>
-    
-</Box>
-<Box sx={{display:'flex'}}>
-<div style={{display:'flex',justifyContent:'flex-start'}}>
+    <div style={{display:'flex',justifyContent:'flex-start',marginTop:'15px'}}>
 <Typography>
     Sunny
 </Typography>
 </div>
+    </Box>
+    
+</Box>
+<Box sx={{display:'flex'}}>
+
 <Box>
         <img src={dots} alt="dots"/>
     </Box>

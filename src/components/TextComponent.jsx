@@ -13,7 +13,7 @@ const TextComponent = ({width}) => {
     Your top questions,
     </Typography>
     </Box>
-    <Box sx={{position:'absolute',left:'50%',}}>
+    <Box sx={{position:'absolute',left:'48%',marginBottom:'44px'}}>
     <img src={circle} alt="circle"/>
     </Box>
    <Box>

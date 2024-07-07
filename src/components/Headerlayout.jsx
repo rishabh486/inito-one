@@ -24,7 +24,14 @@ export const HeaderLayout = ({width}) => {
                >
 
             <div style={{display:'flex',flexDirection:'column',padding:'50px'}}>
+            <div style={{display:'flex',padding:'10px',gap:'10px',alignItems:'center'}}>
             <img src={star} alt="star"/>
+            <div style={{marginTop:'5px'}}>
+            <Typography fontWeight="700" fontSize="13px" color="#000000">
+            TRUSTED BY 20,000+ COUPLES
+                </Typography>
+                </div>
+                </div>
             <Box sx={{padding:'5px'}}>
             <Typography variant="h3" fontWeight="700" fontSize="48px" color="#112D35">
             Track your fertility 

@@ -7,7 +7,10 @@ import greenTick from '../assets/svg/grren-tick.svg';
 import blueTick from '../assets/svg/blue-tick.svg';
 import purpleTick from '../assets/svg/purple-tick.svg';
 import yellowTick from '../assets/svg/yellow-tick.svg';
-import predictContainer from '../assets/svg/predict-container.svg'
+import predictContainer from '../assets/svg/predict-container.svg';
+import dashLg from '../assets/svg/dash-lg.svg'
+import slightDash from '../assets/svg/Frame (3).svg';
+import egg from '../assets/svg/egg.svg';
 const Rectangle = ({width}) => {
     return (
         <>{width>600 ?
@@ -37,7 +40,7 @@ const Rectangle = ({width}) => {
                
             >
                <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center'}}>
-               <Box sx={{padding:'4px'}}>
+               <Box sx={{padding:'4px',position:'relative'}}>
                <Typography fontSize="36px" fontWeight="700" color="#112D35">
                Predict and confirm
                </Typography>
@@ -45,7 +48,7 @@ const Rectangle = ({width}) => {
                your ovulation with
                </Typography>
                <Typography fontSize="36px" fontWeight="700" color="#112D35">
-               actual data
+              <span>actual<span style={{position:'absolute',left:'0%',top:'71%'}}><img src={dashLg} alt="dashlg"/></span></span> data
                </Typography>
                </Box>
                <Box sx={{padding:'4px'}}>
@@ -87,12 +90,13 @@ const Rectangle = ({width}) => {
             {/* Third Overlay Component */}
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:'20px'}}>
             <Box
-               sx={{width:'50%'}}
+               sx={{width:'50%',}}
                >
                   <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',}}>
-                  <Box sx={{padding:'4px'}}>
+                  <Box sx={{padding:'4px',position:'relative'}}>
+                  <span style={{position:'absolute',left:'39%',top:'-25%'}}><img src={egg} alt="egg"/></span>
                   <Typography fontSize="36px" fontWeight="700" color="#112D35">
-                  Never miss a day
+                  Never miss <span>a day<span style={{position:'absolute',left:'43%',top:'6%'}}><img src={slightDash} alt="slightDash"/></span></span>
 
                   </Typography>
                   <Typography fontSize="36px" fontWeight="700" color="#112D35">
@@ -170,7 +174,7 @@ const Rectangle = ({width}) => {
               <Box 
                >
                   <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                  <Box sx={{}}>
+                  <Box sx={{position:'relative'}}>
                   <Typography fontSize="20px" fontWeight="700" color="#112D35">
                   Predict and confirm
                   </Typography>
@@ -178,7 +182,7 @@ const Rectangle = ({width}) => {
                   your ovulation with
                   </Typography>
                   <Typography fontSize="20px" fontWeight="700" color="#112D35">
-                  actual data
+                  <span>actual<span><img  style={{width:'35%',position:'absolute', top:'94%',left:'-2%'}}src={dashLg} alt="dash-lg"/></span></span> data
                   </Typography>
                   </Box>
                   <Box sx={{padding:'4px'}}>
@@ -234,9 +238,10 @@ const Rectangle = ({width}) => {
                sx={{width:'50%',padding:'30px'}}
                >
                   <Box sx={{display: 'flex',flexDirection:'column',justifyContent:'center',}}>
-                  <Box sx={{padding:'4px'}}>
+                  <Box sx={{padding:'4px',position:'relative'}}>
+                  <span style={{position:'absolute',left:'50%',top:'-30%'}}><img style={{width:'65%', height:'65%'}}src={egg} alt="egg"/></span>
                   <Typography fontSize="20px" fontWeight="700" color="#112D35">
-                  Never miss a day
+                  Never miss <span>a day<span style={{position:'absolute',left:'43%',top:'19%'}}><img src={slightDash} alt="slightDash"/></span></span>
 
                   </Typography>
                   <Typography fontSize="20px" fontWeight="700" color="#112D35">

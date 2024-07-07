@@ -9,6 +9,7 @@ import chart from '../assets/svg/chart.svg';
 import doctor from '../assets/svg/doctor.svg';
 import greenHeart from '../assets/svg/green-heart.svg';
 import measureSm from '../assets/svg/measure-sm.svg'
+import hollowStar from '../assets/svg/hollow-star.svg';
 const PreviewBox = ({width}) => {
     return (
         <>
@@ -209,7 +210,7 @@ to the unique you.
                 <Box sx={{ display: 'flex',justifyContent: 'space-between', alignItems: 'center' ,borderRadius: '20px',backgroundColor: '#ffffff', width: '58%'}}>
                    <Box sx={{display:'flex',flexDirection:'column',padding:'10px',justifyContent:'center',marginBottom:'20px',marginLeft:'25px'}}>
                    <Typography fontSize="30px" fontWeight="700" color="#112D35">
-                   Get charts and actual values of your hormones
+                   Get charts and actual values of your hormones<span><img src={hollowStar} alt="hollow"/></span>
                </Typography>
                <Box sx={{marginTop:'10px'}}>
                <Typography fontSize="15px" fontWeight="500" color="#112D35">
